@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Form for employee</title>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+<aside>
+
+
+<h1>Employed record - Employment Details</h1>
+<p>To be completed and retained for each emplyee</p>
+
+
+<div id="formulario">
+
+
+        <form class="form-inline" role="form" action="php/employee.php" method="POST" id="contacto" title="Nombre">
+	<h2>Employer details</h2>
+
+        <label for="codigo">Registered:</label>
+        <input class="form-control name=" name="registered" type="text" required="required" id="registered" placeholder="registered" tabindex="2" title="registered" autofocus required/><br>
+    
+        <label for="codigo">Trading name(if):</label>
+        <input class="form-control name=" name="tradingname" type="text" required="required" id="tradingname" placeholder="trading name" tabindex="1" title="tradingname"/><br>
+    
+        <label for="codigo">ABN:</label>
+        <input class="form-control name=" name="abn" type="text" required="required" id="abn" placeholder="ABN" tabindex="1" title="abn">
+    
+
+	<h2>Employee details</h2>
+
+
+        <label for="codigo">Full name:</label>
+        <input class="form-control name=" name="fullname" type="text" required="required" id="fullname" placeholder="full name" tabindex="1" title="fullname"><br>
+
+        <label for="codigo">phone number(s):</label>
+        <input class="form-control name=" name="phone" type="text" required="required" id="phone" placeholder="phone number" tabindex="1" title="phone"><br>
+
+        <label for="codigo">Adress:</label>
+        <input class="form-control name=" name="adress" type="text" required="required" id="adress" placeholder="adress" tabindex="1" title="adress"><br>
+
+
+        <label for="codigo">Tax file:</label>
+        <input class="form-control name=" name="taxfile" type="text" required="required" id="taxfile" placeholder="tax file" tabindex="1" title="taxfile"><br>
+        <label for="codigo">Date employment:</label>
+        <input class="form-control name=" name="dateemploy" type="text" required="required" id="dateemploy" placeholder="dateemploy" tabindex="1" title="dateemploy"><br>
+
+
+
+      <input type="checkbox" name="employstatus" value="employstatus"/>
+      <label for="c1">Employment Status</label>
+      <input type="checkbox" name="employstatus" value="Oingoing"/>
+      <label for="c1">Oingoing</label>
+      <input type="checkbox" name="employstatus" value="DOS"/>
+      <label for="c1">Temporary</label>
+      <input type="checkbox" name="employstatus" value="WinNT"/>
+      <label for="c1">Other</label>
+        <input class="form-control name=" name="employstatus" type="text" required="required" id="employstatus" placeholder="" tabindex="1" title="employstatus"><br>
+
+
+        <label for="codigo">Full time</label>
+        <label for="codigo">part time</label>
+        <label for="codigo">Casual</label>
+        <label for="codigo">Other(specify e.g. piece)</label>
+        <input class="form-control name=" name="timepiece" type="text" required="required" id="timepiece" placeholder="" tabindex="1" title="timepiece"><br>
+        
+        <label for="codigo">Ordinary hours of work*(for part-time or full-time employee):</label>
+        <input class="form-control name=" name="hourss" type="text" required="required" id="hourss" placeholder="hours" tabindex="1" title="hourss"><br>
+
+        <label for="codigo">Agreed/required method of pay(e.g):</label>
+        <input class="form-control name=" name="fechanac" type="text" required="required" id="fechanac" placeholder="fechanacimiento" tabindex="1" title="fechanac"><br>
+
+        <label for="codigo">agreed/required pay period(e.g):</label>
+        <input class="form-control name=" name="deptonac" type="text" required="required" id="deptonac" placeholder="departamentonacimiento" tabindex="1" title="deptonac"><br>
+
+        <label for="codigo">agreed/required pay day(e.g):</label>
+        <input class="form-control name=" name="municipionac" type="text" required="required" id="municipionac" placeholder="municipionac" tabindex="1" title="municipionac"><br>
+
+        <label for="codigo">Apprenticeship/trainesship:</label>
+        <input class="form-control name=" name="igss" type="text" required="required" id="igss" placeholder="afiliacionigss" tabindex="1" title="igss"><br>
+        
+        <label for="codigo">Name of Award of Agreement that:</label>
+        <input class="form-control name=" name="nit" type="text" required="required" id="nit" placeholder="numeronit" tabindex="1" title="nit"><br>
+        
+        <label for="codigo">Classification/job title under the:</label>
+        <input class="form-control name=" name="licencia" type="text" required="required" id="licencia" placeholder="numerolicencia" tabindex="1" title="licencia"><br>
+
+        <br>
+        <br>
+        <input class="btn btn-primary" type="submit" name="guardar" tabindex="7" value="GUARDAR">
+        <input type="hidden" name="estado" value="1">
+        </form>
+    </div>
+
+</aside>
+</body>
+</html>
